@@ -175,6 +175,7 @@
 }
 
 .table__cell {
+  list-style: none;
   width: 250px;
   padding-top: 60px;
   padding-left: 0px;
@@ -263,10 +264,12 @@
 
 .section-title_theme_dark {
   padding-top: 90px;
+  z-index: 1;
   color: white;
 }
 
 .section-subtitle_theme_dark {
+  z-index: 1;
   color: white;
 }
 
