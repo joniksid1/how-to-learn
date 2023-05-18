@@ -40,7 +40,8 @@
 }
 
 .header__title {
-  width: 730px;
+  max-width: 730px;
+  width: 100%;
   padding-left: 64px;
   margin: 0;
   font-size: 102px;
@@ -51,7 +52,8 @@
 
 .header__subtitle {
   position: absolute;
-  width: 388px;
+  max-width: 388px;
+  width: 100%;
   left: 64px;
   bottom: 30px;
   margin: 0;
@@ -66,6 +68,10 @@
   text-decoration: none;
 }
 
+.header__link:hover {
+  color: #FF00FF;
+}
+
 .header__square-pic {
   position: absolute;
   height: 568px;
@@ -78,6 +84,8 @@
 
 .header__main-illustration {
   position: absolute;
+  object-fit: cover;
+  object-position: 50% 50%;
   width: 765px;
   height: 608px;
   bottom: 0;
@@ -124,7 +132,7 @@
   padding-bottom: 30px;
 }
 
-.two-columns__paragraph_no-padding {
+.two-columns__paragraph:nth-of-type(3) {
   padding-bottom: 0;
 }
 
@@ -203,7 +211,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 890px;
+  min-height: 890px;
   background-image: url('/images/feynman.png');
   background-position: bottom left;
   background-repeat: no-repeat;
@@ -215,7 +223,8 @@
   margin: 0;
   padding-top: 100px;
   text-align: center;
-  width: 648px;
+  min-width: 648px;
+  width: 100%;
   font-size: 120px;
   font-weight: 600;
   line-height: 1.15;
@@ -232,12 +241,16 @@
 .feynman__link {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 48px;
   color: #2f80ed;
   text-decoration: none;
   font-size: 36px;
   font-weight: normal;
   line-height: 51px;
+}
+
+.feynman__link:hover {
+  color: #FF00FF;
 }
 
 /* Cтили для блока kaufman */
@@ -252,12 +265,13 @@
 }
 
 .kaufman__triangle {
+  background-size: contain;
+  background-image: url('/images/kaufman-triangle.svg');
   position: absolute;
   right: -210px;
   top: 0;
   width: 877px;
   height: 877px;
-  z-index: 0;
 }
 
 /* Ниже модификаторы для тёмной темы */
@@ -265,17 +279,17 @@
 .section-title_theme_dark {
   padding-top: 90px;
   z-index: 1;
-  color: white;
+  color: #fff;
 }
 
 .section-subtitle_theme_dark {
   z-index: 1;
-  color: white;
+  color: #fff;
 }
 
 .table_theme_dark {
   z-index: 1;
-  color: white;
+  color: #fff;
   padding-bottom: 90px;
 }
 
@@ -288,12 +302,13 @@
 /* Ниже стили для блока footer */
 
 .footer {
+  box-sizing: border-box;
   padding: 60px 0 40px;
   min-height: 350px;
   display: flex;
   justify-content: center;
   background-color: #1f1f1f;
-  color: white;
+  color: #fff;
 }
 
 .footer__columns {
@@ -338,7 +353,11 @@
   font-weight: normal;
   line-height: 30px;
   text-decoration: none;
-  color: white;
+  color: #fff;
+}
+
+.footer__column-link:hover {
+  color: #FF00FF;
 }
 
 .footer__social-icon {
