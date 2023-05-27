@@ -1,3 +1,12 @@
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -16,6 +25,7 @@
 .header {
   display: flex;
   position: relative;
+  overflow: hidden;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
@@ -66,10 +76,12 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+  transition: opacity .5s;
 }
 
 .header__link:hover {
   color: #FF00FF;
+  opacity: .3;
 }
 
 .header__square-pic {
@@ -80,6 +92,7 @@
   right: 0;
   top: 64px;
   z-index: 0;
+  animation: rotation 20s linear infinite;
 }
 
 .header__main-illustration {
@@ -96,13 +109,12 @@
 /* Ниже стили для блока description */
 
 .description {
-  display: flex;
-  justify-content: center;
   padding-top: 100px;
 }
 
 .two-columns {
   width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -140,6 +152,58 @@
   font-weight: 600;
 }
 
+/* Ниже стили для блока techniques */
+
+.techniques {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.cards {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  width: 920px;
+  flex-wrap: wrap;
+}
+
+.cards__item {
+  text-align: center;
+  list-style: none;
+  width: 240px;
+  padding-top: 60px;
+  padding-left: 0px;
+  padding-right: 100px;
+}
+
+.cards__item:nth-of-type(3) {
+  padding-right: 0;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.cards__title {
+  font-size: 24px;
+  padding-top: 43px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.cards__description {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 23px;
+  padding-top: 16px;
+  margin: 0;
+}
 /* Ниже стили для блока digits */
 
 .digits {
