@@ -420,10 +420,12 @@
   font-size: 36px;
   font-weight: normal;
   line-height: 51px;
+  transition: opacity .5s;
 }
 
 .feynman__link:hover {
   color: #FF00FF;
+  opacity: .3;
 }
 
 /* Cтили для блока kaufman */
@@ -470,6 +472,35 @@
   width: 200px;
   padding-right: 0;
   padding-top: 80px;
+}
+
+/* Стили для блока resources */
+
+.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 217px 0;
+}
+
+.resources__logo-zone {
+  text-align: center;
+  padding-top: 80px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.resources__link {
+  transition: opacity .5s;
+}
+
+.resources__link:hover {
+  opacity: .3;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
 }
 
 /* Ниже стили для блока footer */
@@ -527,10 +558,12 @@
   line-height: 30px;
   text-decoration: none;
   color: #fff;
+  transition: opacity .5s;
 }
 
 .footer__column-link:hover {
   color: #FF00FF;
+  opacity: .3;
 }
 
 .footer__social-icon {
