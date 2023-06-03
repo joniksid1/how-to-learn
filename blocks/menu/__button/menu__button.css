@@ -1,0 +1,12 @@
+.menu__button {
+    position: absolute;
+    top: 30px;
+    right: 64px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.menu__button:checked + .menu__label + .menu {
+    display: block;
+}
