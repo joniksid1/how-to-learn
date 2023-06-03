@@ -3,7 +3,7 @@
     position: relative;
     overflow: hidden;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
