@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" style="scroll-behavior: smooth;">
 
 <head>
   <meta charset="UTF-8">
@@ -12,41 +12,41 @@
   <div class="page">
     <header class="header">
       <div class="header__container">
-        <input class="menu__button" type="checkbox" id="burger">
-        <label class="menu__label" for="burger">
+        <label class="menu__label">
+          <input class="menu__button" type="checkbox">
           <span class="menu__visible-button no-select" title="Показать/скрыть меню">☰</span>
+          <nav class="menu no-select">
+            <ul class="menu__wrapper">
+              <li class="menu__item">
+                <a class="header__link header__link_color_white" href="#description">Главные проблемы в обучении</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link header__link_color_white" href="#techniques">Техники обучения</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link header__link_color_white" href="#video">Видео на TED</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link header__link_color_white" href="#oakley">История Барбары Оакли</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link header__link_color_white" href="#feynman">Метод Фейнмана</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link header__link_color_white" href="#digits">Цифры и факты</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link header__link_color_white" href="#khan">Салман Хан: "Весь мир - школа"</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link header__link_color_white" href="#kaufman">Принципы обучения от Джоша Кауфмана</a>
+              </li>
+              <li class="menu__item">
+                <a class="header__link header__link_color_white" href="#resources">Полезные ресурсы</a>
+              </li>
+            </ul>
+            </nav>
         </label>
-        <nav class="menu no-select">
-        <ul class="menu__wrapper">
-          <li class="menu__item">
-            <a class="header__link header__link_color_white">Главные проблемы в обучении</a>
-          </li>
-          <li class="menu__item">
-            <a class="header__link header__link_color_white">Техники обучения</a>
-          </li>
-          <li class="menu__item">
-            <a class="header__link header__link_color_white">Видео на TED</a>
-          </li>
-          <li class="menu__item">
-            <a class="header__link header__link_color_white">История Барбары Оакли</a>
-          </li>
-          <li class="menu__item">
-            <a class="header__link header__link_color_white">Метод Фейнмана</a>
-          </li>
-          <li class="menu__item">
-            <a class="header__link header__link_color_white">Цифры и факты</a>
-          </li>
-          <li class="menu__item">
-            <a class="header__link header__link_color_white">Салман Хан: "Весь мир - школа"</a>
-          </li>
-          <li class="menu__item">
-            <a class="header__link header__link_color_white">Принципы обучения от Джоша Кауфмана</a>
-          </li>
-          <li class="menu__item">
-            <a class="header__link header__link_color_white">Полезные ресурсы</a>
-          </li>
-        </ul>
-        </nav>
       </div>
       <img class="logo logo_place_header" src="./images/logo_place_header.svg" alt="Логотип Яндекс.Практикум">
       <h1 class="header__title">Научиться учиться</h1>
@@ -58,7 +58,7 @@
       <div class="header__square-pic rotation"></div>
     </header>
     <main class="content">
-      <article class="description">
+      <article class="description" id="description">
         <div class="two-columns">
           <h2 class="two-columns__brief">
             Главные проблемы в обучении
@@ -81,7 +81,7 @@
           </div>
         </div>
       </article>
-      <section class="techniques">
+      <section class="techniques" id="techniques">
         <h2 class="section-title">
           Техники обучения
         </h2>
@@ -126,7 +126,7 @@
           </li>
         </ul>
       </section>
-      <section class="video">
+      <section class="video" id="video">
         <h2 class="section-title">
           Видео нa TED
         </h2>
@@ -138,7 +138,7 @@
           <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
         </div>
       </section>
-      <article class="oakley">
+      <article class="oakley" id="oakley">
         <div class="two-columns">
           <h2 class="two-columns__brief">
             История Барбары Оакли.
@@ -156,7 +156,7 @@
           </div>
         </div>
       </article>
-      <section class="feynman">
+      <section class="feynman" id="feynman">
         <h2 class="feynman__title">
           Метод Фейнмана
         </h2>
@@ -165,7 +165,7 @@
         </p>
         <a class="feynman__link" href="#" target="_blank">Подробнее →</a>
       </section>
-      <section class="digits">
+      <section class="digits" id="digits">
         <h2 class="section-title">
           Цифры и факты
         </h2>
@@ -219,7 +219,7 @@
           </li>
         </ul>
       </section>
-      <section class="khan">
+      <section class="khan" id="khan">
         <div class="khan__container">
           <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
@@ -236,7 +236,7 @@
           </div>
         </div>
       </section>
-      <section class="kaufman">
+      <section class="kaufman" id="kaufman">
         <h2 class="section-title section-title_theme_dark">
           Принципы обучения
         </h2>
@@ -294,7 +294,7 @@
         </ul>
         <div class="kaufman__triangle rotation"></div>
       </section>
-      <section class="resources">
+      <section class="resources" id="resources">
         <h2 class="section-title">
           Полезные ресурсы
         </h2>

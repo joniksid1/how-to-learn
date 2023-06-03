@@ -1,3 +1,7 @@
 .header__link_color_white {
     color: #fff;
 }
+
+.header__link_color_white:hover {
+    color: #fff;
+}
