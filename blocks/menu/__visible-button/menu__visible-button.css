@@ -1,5 +1,5 @@
 .menu__visible-button {
-    position: fixed;
+    position: absolute;
     top: 145px;
     right: 64px;
     font-size: 42px;

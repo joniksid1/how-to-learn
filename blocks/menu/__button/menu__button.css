@@ -1,12 +1,11 @@
 .menu__button {
     position: absolute;
-    bottom: -99999999px;
     width: 1px;
     height: 1px;
     overflow: hidden;
     clip-path: inset(0 0 0 0);
 }
 
-.menu__button:checked ~ .menu {
+.menu__button:checked + .menu {
     display: block;
 }
