@@ -1,0 +1,10 @@
+.form__input-container {
+    box-sizing: border-box;
+    min-width: 50%;
+    min-height: 300px;
+    padding: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
