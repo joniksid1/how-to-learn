@@ -10,10 +10,12 @@
     transition: opacity .4s;
     color: white;
     font-family: inherit;
+    font-weight: 600;
+    line-height: 39px;
 }
 
 .form__button[type="submit"] {
-    background-color: #000;
+    background-color: #1f1f1f;
   }
 
 .form__button[type="reset"] {
